@@ -1,1 +1,10 @@
 -e .
+
+robosuite~=1.4.0
+numpy~=1.23.5
+setuptools~=67.7.2
+pillow~=9.5.0
+opencv-python~=4.7.0.72
+numba~=0.56.4
+termcolor~=2.3.0
+mujoco~=2.3.5

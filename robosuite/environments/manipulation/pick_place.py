@@ -206,7 +206,7 @@ class PickPlace(SingleArmEnv):
             self.object_id = self.object_to_id[object_type]  # use for convenient indexing
         self.obj_to_use = None
 
-        # settings for table top
+        # settings for table-top
         self.table_full_size = table_full_size
         self.table_friction = table_friction
 
@@ -506,6 +506,7 @@ class PickPlace(SingleArmEnv):
             self.objects.append(obj)
 
         # task includes arena, robot, and objects of interest
+        # TODO change naming: this is not a task, it's a model of the environment
         self.model = ManipulationTask(
             mujoco_arena=mujoco_arena,
             mujoco_robots=[robot.robot_model for robot in self.robots],
